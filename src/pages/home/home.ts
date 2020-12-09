@@ -21,7 +21,7 @@ export class HomePage {
   ) {}
 
   async presentActionSheet() {
-    const actionSheet = this.actionSheetCtrl.create({
+    const actionSheet = await this.actionSheetCtrl.create({
       buttons: [
         {
           text: 'Choose Photo',
